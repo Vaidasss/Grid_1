@@ -1,0 +1,47 @@
+
+/*https://medium.com/@ralph1786/positioning-with-css-grid-cf1132f596ed*/
+
+.konteineris {
+    display: grid;
+    grid-template-rows: 40px 120px 300px 50px;
+    grid-gap: 10px;
+    color:black;
+    background-color:white;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / span 4;   /*grid-template-columns: auto auto auto auto;*/
+    background-color: seagreen;      /* grid-template-columns: auto auto auto auto;*/
+}
+
+.sidebar {
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: brown;
+}
+
+.main {
+    background-color: teal;
+    grid-area: 3 / 2 / 4 / 5;
+}
+
+.content1 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: sandybrown;
+}
+
+.content2 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: rosybrown;
+}
+.content3 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: tan;
+}
+.footer {
+    grid-area: 4 / 1 / 5 / span 4;
+    background-color: magenta;
+}
+
+div {
+    padding:5px; /* tekstas pasislenka. Gali ir nebūti. 
+}
